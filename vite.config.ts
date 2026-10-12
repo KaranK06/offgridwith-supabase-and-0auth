@@ -12,6 +12,7 @@ export default defineConfig(({ command }) => ({
     tanstackStart({ server: { entry: "server" } }),
     ...(command === "build" ? [nitro(process.env["VERCEL"] ? {} : { preset: "node-server" })]: []),
     react(),
+        nitro(),
   ],
   server: {
     // Pre-transform the main files at startup so the first page load doesn't wait on them.
