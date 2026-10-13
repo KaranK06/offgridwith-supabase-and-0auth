@@ -13,7 +13,7 @@ import campaign from "@/assets/campaign.jpg";
 import promo from "@/assets/promo.jpg";
 import tee from "@/assets/product-1.jpg";
 import hoodie from "@/assets/product-3.jpg";
-import jacket from "@/assets/product-4.jpg";
+import jacket from "@/assets/men-jacket.jpg";
 import ivory from "@/assets/product-2.jpg";
 import p1 from "@/assets/person-1.jpg";
 import p2 from "@/assets/person-2.jpg";
