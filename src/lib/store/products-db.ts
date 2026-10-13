@@ -62,7 +62,7 @@ export async function fetchProduct(id: string): Promise<Product | null> {
 export function useCatalog() {
   const query = useQuery({
     queryKey: ["products"],
-    queryFn: fetchProducts,
+    quewryFn: fetchProducts,
     initialData: sampleProducts,
     initialDataUpdatedAt: 0, // "this sample data is ancient" -> forces a real fetch on first load
     staleTime: 60_000,

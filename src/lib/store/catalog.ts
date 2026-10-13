@@ -78,7 +78,7 @@ export const products: Product[] = rows.map((r, i) => ({
   limited: [4, 11, 12, 13].includes(i),
   few: [4, 11, 13].includes(i),
   tag: i === 0 ? "Exclusive Price" : i === 4 ? "Pre-Order Now" : undefined,
-}));
+})).filter((p) => p.id !== "piece-4");
 // Curated image order only; product order and category destinations stay unchanged.
 export function menuCollageProducts(audience: string, list: Product[] = products) {
   const categories = audience === "Men"

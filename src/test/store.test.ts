@@ -9,8 +9,8 @@ import {
 } from "@/lib/store/catalog";
 import { mergeCart, cartTotal } from "@/lib/store/context";
 describe("Showcase shopping rules", () => {
-  it("offers 16 clothing products with no footwear", () => {
-    expect(products).toHaveLength(16);
+  it("offers 15 clothing products with no footwear", () => {
+    expect(products).toHaveLength(15);
     const clothing = [
       "T-Shirts",
       "Hoodies",
@@ -87,7 +87,7 @@ describe("Showcase shopping rules", () => {
     expect(cart[1]?.message).toBe("Thank you");
   });
   it("matches collection audiences and exclusive drops", () => {
-    expect(collectionProducts("shop-all")).toHaveLength(16);
+    expect(collectionProducts("shop-all")).toHaveLength(15);
     expect(collectionProducts("women").every((p) => p.audience === "Women")).toBe(true);
     expect(collectionProducts("limited-edition").map((p) => p.id)).toEqual([
       "piece-5",
